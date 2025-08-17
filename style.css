@@ -78,6 +78,7 @@
     border: 1px solid transparent;
     text-decoration: none;
     font-weight: 600;
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
   }
   .btn:hover { filter: brightness(1.05); }
   .btn--ghost {
@@ -85,6 +86,17 @@
     color: inherit;
     border: 1px solid currentColor;
   }
+  
+  /* Contact button text color */ 
+  .contact .btn--ghost {
+    color: #6ea8fe;              /* example: your accent blue */
+    border-color: #6ea8fe;       /* keep border same as text */
+  }
+  
+  .contact .btn--ghost:hover {
+    background: rgba(110, 168, 254, 0.15); /* subtle hover background */
+  }
+  
   
   /* Contact buttons centered */
   .contact {
@@ -166,86 +178,82 @@
     justify-content: space-between;
   }
   
-/* Hamburger button */
-.hamburger {
-    position: relative;
-    width: 44px;
-    height: 36px;
-    border: 1px solid white;   /* white border */
-    border-radius: .5rem;
-    background: transparent;
-    display: grid;
-    place-items: center;
+  .hamburger {
+    position: fixed;
+    top: 14px;
+    right: 24px;
+    z-index: 1100;
+  
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    color: white;              /* makes the bars white */
+  
+    display: flex;               /* stack bars manually */
+    flex-direction: column;      /* vertical stack */
+    justify-content: center;     /* center vertically inside button */
+    align-items: center;         /* center horizontally */
+    gap: 5px;                    /* spacing between bars */
+    
+    background: rgba(110, 168, 254, 0.08); /* faint accent background */
+    border: 1px solid var(--accent);       /* accent border */
+    border-radius: 12px;
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
   }
   
   .hamburger__bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background: white;         /* bars always white */
-    margin: 3px 0;
-    transition: none;          /* no transformation */
+    width: 22px;                 /* bar length */
+    height: 2px;                 /* bar thickness */
+    background: var(--accent); /* accent bars */
+    border-radius: 2px;          /* rounded bars */
   }
   
-  /* Remove transformation for “X” */
-  .hamburger.close .hamburger__bar:nth-child(1),
-  .hamburger.close .hamburger__bar:nth-child(2),
-  .hamburger.close .hamburger__bar:nth-child(3) {
+  
+  /* Keep bars as three lines even when open */
+  .hamburger.is-open .hamburger__bar {
     transform: none;
     opacity: 1;
-  }  
+  }
   
-  /* Drawer container */
+  /* Drawer: keep slide from right, ensure content clears behind button */
   .nav__drawer {
     position: fixed;
     top: 0;
     right: -320px;
-    width: 280px;
+    width: 300px;
     height: 100dvh;
-    padding: 1rem;
+    padding: 16px;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 16px);
     background: var(--card);
     border-left: 1px solid var(--border);
-    box-shadow: -8px 0 24px rgb(255, 255, 255);
+    box-shadow: -8px 0 24px rgba(0,0,0,.35);
     transition: right .25s ease;
     z-index: 1001;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    overflow: hidden; /* contain scrolling list */
+    overflow: hidden;
   }
   .nav__drawer.open { right: 0; }
   
-  /* Backdrop */
+  /* Backdrop stays as is */
   .nav__backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.35);
+    background: rgba(44, 44, 44, 0.45);
     backdrop-filter: blur(2px);
     z-index: 1000;
   }
   .nav__backdrop[hidden] { display: none; }
   
-  /* Close button inside drawer shows as an X via bars transform */
-  .nav__drawer .hamburger.close {
-    margin-left: auto;
-    border: none;
-  }
-  .hamburger.close .hamburger__bar:nth-child(1) { transform: translateY(5px) rotate(45deg); }
-  .hamburger.close .hamburger__bar:nth-child(2) { opacity: 0; }
-  .hamburger.close .hamburger__bar:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
-  
-  /* Menu list inside drawer, scrollable vertical */
+  /* Scrollable vertical menu */
   .nav__menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: block;
-    max-height: calc(100dvh - 96px);
+    max-height: calc(100dvh - 120px);
     overflow-y: auto;
   }
-  .nav__menu li { display: block; }
   .nav__menu a {
     display: block;
     padding: .6rem .75rem;

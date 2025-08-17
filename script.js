@@ -1,39 +1,40 @@
-// ====== Hamburger drawer behavior ======
 const navToggle = document.getElementById("navToggle");
-const navClose = document.getElementById("navClose");
 const navDrawer = document.getElementById("nav-drawer");
 const navBackdrop = document.getElementById("navBackdrop");
 
 function openNav() {
   navDrawer.classList.add("open");
   navBackdrop.hidden = false;
+  navToggle.classList.add("is-open");
   navToggle.setAttribute("aria-expanded", "true");
-  // focus first interactive element for accessibility
-  const firstFocusable = navDrawer.querySelector("a, button");
-  firstFocusable && firstFocusable.focus();
+  navDrawer.querySelector("a, button")?.focus();
 }
 
 function closeNav() {
   navDrawer.classList.remove("open");
   navBackdrop.hidden = true;
+  navToggle.classList.remove("is-open");
   navToggle.setAttribute("aria-expanded", "false");
   navToggle.focus();
 }
 
-navToggle?.addEventListener("click", openNav);
-navBackdrop?.addEventListener("click", closeNav);
-navClose?.addEventListener("click", closeNav);
+function toggleNav() {
+  if (navDrawer.classList.contains("open")) closeNav();
+  else openNav();
+}
 
-// Close on Escape
+navToggle?.addEventListener("click", toggleNav);
+navBackdrop?.addEventListener("click", closeNav);
+
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && navDrawer.classList.contains("open")) closeNav();
 });
 
-// Close after clicking a link
 navDrawer.addEventListener("click", (e) => {
   const t = e.target;
   if (t.matches("a") || t.closest("a")) closeNav();
 });
+
 
 // ====== Footer year ======
 const yearEl = document.getElementById("year");
