@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 
-  <title>Matt Carroll, Portfolio</title>
+  <title>Matthew Carroll Portfolio</title>
   <meta name="description" content="Software developer portfolio showcasing selected projects, research, and contact info." />
 
   <!-- Open Graph -->
@@ -13,11 +16,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/og-image.jpg" />
 
-  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Prefers color scheme -->
-  <meta name="color-scheme" content="light dark" />
 </head>
 <body>
   <!-- Skip link -->
@@ -25,33 +27,52 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Main">
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌗</button>
-        </li>
-      </ul>
-    </nav>
+        <!-- Hamburger button -->
+        <button class="hamburger" aria-expanded="false" aria-controls="nav-drawer" id="navToggle" aria-label="Open menu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      
+        <!-- Offcanvas drawer -->
+        <div class="nav__drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Main menu">
+      
+          <!-- Scrollable list -->
+          <ul class="nav__menu" id="navMenuList">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- add more links if needed -->
+          </ul>
+        </div>
+      
+        <!-- Backdrop -->
+        <div class="nav__backdrop" id="navBackdrop" hidden></div>
+      </nav>
+      
+      
     <div class="hero">
         <h1>Matthew Carroll</h1>
-        <p class="subhead">Software Developer, data curious, builder of useful things</p>
       
         <!-- Contact buttons moved here -->
         <div class="contact hero__contact">
-          <a class="btn btn--ghost" href="mailto:youremail@example.com">Email</a>
-          <a class="btn btn--ghost" href="https://github.com/matthewcarroll2020" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+            <a class="btn btn--ghost" href="mailto:matthewcarroll70202@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/matthewcarroll2020" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/matthew-carroll-45759b283" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
       </div>      
   </header>
 
   <main id="content">
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="section__lead">A few selected builds, each with a short summary and tech stack.</p>
 
       <div class="grid" id="projectsGrid">
         <!-- Cards are injected by script.js using the projects array -->
@@ -73,12 +94,7 @@
         </li>
       </ul>
     </section>
-    
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Matt Carroll</p>
-  </footer>
 
   <script src="script.js" defer></script>
 </body>
