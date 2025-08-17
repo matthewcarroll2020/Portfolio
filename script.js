@@ -40,39 +40,6 @@ navDrawer.addEventListener("click", (e) => {
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ====== Projects data and rendering ======
-// Update this array with your actual projects
-const projects = [
-  {
-    title: "Virtual Fitting Room with Biometrics",
-    summary: "Unity VR prototype integrating HP Omnicept and Tobii for eye tracking, heart rate, and cognitive load streams.",
-    stack: ["Unity", "C#", "HP Omnicept", "Tobii", "Python", "Pandas"],
-    links: {
-      github: "https://github.com/matthewcarroll2020/Portfolio",
-      demo: "#"
-    }
-  },
-  {
-    title: "QuickWrite App",
-    summary: "Full stack social writing app with auth and cloud functions, optimized for low friction posting.",
-    stack: ["React", "Node.js", "NoSQL", "Cloud Functions"],
-    links: {
-      github: "https://github.com/yourrepo",
-      demo: "#"
-    }
-  },
-  {
-    title: "Life Expectancy Modeling",
-    summary: "Compared linear models, trees, and ensembles, reported R^2 with confidence intervals in a reproducible notebook.",
-    stack: ["Python", "Pandas", "scikit learn", "Jupyter"],
-    links: {
-      github: "https://github.com/yourrepo",
-      demo: "#"
-    }
-  }
-];
-
-const grid = document.getElementById("projectsGrid");
 
 function cardHTML(p) {
   const stack = p.stack.join(" · ");

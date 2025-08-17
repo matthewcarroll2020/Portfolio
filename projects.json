@@ -1,0 +1,78 @@
+[
+    {
+      "slug": "quickwrite",
+      "title": "QuickWrite",
+      "summary": "Built in a scrum team, wrote features across auth and feed, documented in GitHub wiki and project board.",
+      "stack": ["React", "Node.js", "NoSQL", "Cloud Functions"],
+      "heroImage": "images/projects/quickwrite/hero.png",
+      "gallery": [
+        "images/projects/quickwrite/screen1.png",
+        "images/projects/quickwrite/screen2.png"
+      ],
+      "links": {
+        "repo": "https://github.com/WParkerHolland/CSC305",
+        "wiki": "https://github.com/WParkerHolland/CSC305/wiki",
+        "board": "https://github.com/users/WParkerHolland/projects/2",
+        "live": ""
+      },
+      "details": [
+        "Scrum development with sprints and a project board",
+        "End to end auth and content posting flow",
+        "Wiki documents decisions and APIs"
+      ]
+    },
+    {
+      "slug": "legacy-js-samples",
+      "title": "Legacy JavaScript Apps",
+      "tagline": "Small JS apps from early work",
+      "summary": "A curated set of earlier JavaScript projects with links and short notes.",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "heroImage": "images/projects/legacy/hero.png",
+      "gallery": [],
+      "links": {
+        "page": "https://youruser.github.io/legacy-js",
+        "repo": "https://github.com/youruser/legacy-js"
+      },
+      "details": [
+        "Simple DOM apps and widgets",
+        "Notes on what I would refactor today"
+      ]
+    },
+    {
+      "slug": "carroll-custom-tackle",
+      "title": "CarrollCustomTackle Web Store",
+      "tagline": "Storefront and content for custom lures",
+      "summary": "Built and shipped a small ecommerce site, collected payments, and tuned UX.",
+      "stack": ["HTML", "CSS", "JavaScript", "Stripe"],
+      "heroImage": "images/projects/cct/hero.png",
+      "gallery": [
+        "images/projects/cct/home.png",
+        "images/projects/cct/product.png"
+      ],
+      "links": {
+        "site": "https://carrollcustomtackle.example",
+        "repo": "https://github.com/youruser/CarrollCustomTackle"
+      },
+      "details": [
+        "Payments, product pages, and launch logistics",
+        "What worked and what I would change next"
+      ]
+    },
+    {
+      "slug": "base-starter",
+      "title": "Original Base Code",
+      "tagline": "Simple starter repo used in several apps",
+      "summary": "Lightweight boilerplate for static sites with a11y patterns, cards, and icons.",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "heroImage": "images/projects/base/hero.png",
+      "gallery": [],
+      "links": {
+        "repo": "https://github.com/youruser/base-starter"
+      },
+      "details": [
+        "Opinionated structure and utilities",
+        "Copy paste friendly components"
+      ]
+    }
+]
+  
