@@ -16,8 +16,6 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Prefers color scheme -->
-  <meta name="color-scheme" content="light dark" />
 </head>
 <body>
   <!-- Skip link -->
@@ -25,16 +23,29 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Main">
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌗</button>
-        </li>
-      </ul>
-    </nav>
+        <!-- Hamburger button -->
+        <button class="hamburger" aria-expanded="false" aria-controls="nav-drawer" id="navToggle" aria-label="Open menu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      
+        <!-- Offcanvas drawer -->
+        <div class="nav__drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Main menu">
+      
+          <!-- Scrollable list -->
+          <ul class="nav__menu" id="navMenuList">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- add more links if needed -->
+          </ul>
+        </div>
+      
+        <!-- Backdrop -->
+        <div class="nav__backdrop" id="navBackdrop" hidden></div>
+      </nav>
+      
+      
     <div class="hero">
         <h1>Matthew Carroll</h1>
         <p class="subhead">Software Developer, data curious, builder of useful things</p>
@@ -73,12 +84,7 @@
         </li>
       </ul>
     </section>
-    
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Matt Carroll</p>
-  </footer>
 
   <script src="script.js" defer></script>
 </body>
