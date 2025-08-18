@@ -17,7 +17,6 @@
         "  CSS",
         "  JavaScript",
         "  Node.js",
-        "  Git/GitHub",
         "  Firebase (Authentication, Realtime Database, Cloud Functions, Test Lab)",
         "  NoSQL"
       ],
@@ -35,12 +34,7 @@
         "wiki": "https://github.com/WParkerHolland/CSC305/wiki",
         "board": "https://github.com/users/WParkerHolland/projects/2",
         "site": "https://wparkerholland.github.io/CSC305/"
-      },
-      "details": [
-        "Scrum development with sprints and a project board",
-        "End to end auth and content posting flow",
-        "Wiki documents decisions and APIs"
-      ]
+      }
     },
     {
         "slug": "carroll-custom-tackle",
@@ -65,28 +59,29 @@
           "repo": "https://github.com/matthewcarroll2020/CarrollCustomTackle",
           "site": "https://www.carrollcustomtackle.com/",
           "live": "https://matthewcarroll2020.github.io/CarrollCustomTackle/"
-        },
-        "details": [
-          "Payments, product pages, and launch logistics",
-          "What worked and what I would change next"
-        ]
+        }
     },
     {
       "slug": "legacy-js-samples",
-      "title": "Legacy JavaScript Apps",
-      "tagline": "Small JS apps from early work",
-      "summary": "A curated set of earlier JavaScript projects with links and short notes.",
+      "title": "Foundations Portfolio",
+      "summary": "A simple, public-facing site that introduces my work and links to JavaScript projects that I have created. The site contains links to each interactable Javascript game along with an About Me page.",
+      "responsibilities": [
+        "Designed and developed a static website using HTML, CSS, and JavaScript",
+        "Deployed the site with GitHub Pages for simple and reliable hosting",
+        "Created and structured an 'About Me' page and JavaScript demo section",
+        "Maintained version control and updates using Git and GitHub"
+      ],
       "stack": ["HTML", "CSS", "JavaScript"],
       "heroImage": "images/projects/legacy/hero.png",
-      "gallery": [],
+      "gallery": [
+        "images/projects/legacy/SS1.png",
+        "images/projects/legacy/SS2.png",
+        "images/projects/legacy/SS3.png"
+      ],
       "links": {
-        "page": "https://youruser.github.io/legacy-js",
-        "repo": "https://github.com/youruser/legacy-js"
-      },
-      "details": [
-        "Simple DOM apps and widgets",
-        "Notes on what I would refactor today"
-      ]
+        "site": "https://matthewcarroll2020.github.io",
+        "repo": "https://github.com/matthewcarroll2020/matthewcarroll2020.github.io"
+      }
     }
 ]
   
