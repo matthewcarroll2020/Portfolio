@@ -51,9 +51,9 @@
             "Balanced business leadership with technical responsibilities to support company growth"
         ],
         "gallery": [
-          "images/projects/cct/SS1.png",
-          "images/projects/cct/SS2.png",
-          "images/projects/cct/SS3.png"
+          "images/projects/cct/SS1.PNG",
+          "images/projects/cct/SS2.PNG",
+          "images/projects/cct/SS3.PNG"
         ],
         "links": {
           "repo": "https://github.com/matthewcarroll2020/CarrollCustomTackle",
@@ -74,9 +74,9 @@
       "stack": ["HTML", "CSS", "JavaScript"],
       "heroImage": "images/projects/legacy/hero.png",
       "gallery": [
-        "images/projects/legacy/SS1.png",
-        "images/projects/legacy/SS2.png",
-        "images/projects/legacy/SS3.png"
+        "images/projects/legacy/SS1.PNG",
+        "images/projects/legacy/SS2.PNG",
+        "images/projects/legacy/SS3.PNG"
       ],
       "links": {
         "site": "https://matthewcarroll2020.github.io",
