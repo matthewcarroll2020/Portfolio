@@ -67,7 +67,15 @@ async function loadProjects() {
     titleEl.textContent = p.title;
     tagEl.textContent = p.tagline || '';
     sumEl.textContent = p.summary || '';
+    detailsEl.innerHTML = (p.responsibilities || [])
+      .map(item => `<li><p>${item}</p></li>`)
+      .join('');
     stackEl.textContent = (p.stack || []).join(' · ');
+    galleryEl.innerHTML = (p.gallery || []).map(src => `
+        <article class="card">
+          <img src="${src}" alt="${p.title} screenshot" style="width:100%;border-radius:.6rem;"/>
+        </article>
+      `).join('');
   
     // Links row
     const links = [];
