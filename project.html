@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+  <title>Matthew Carroll's Projects</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Reuse your hamburger nav -->
+  <nav class="nav" aria-label="Main">
+    <button class="hamburger" aria-expanded="false" aria-controls="nav-drawer" id="navToggle" aria-label="Open menu">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </button>
+    <div class="nav__drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Main menu">
+      <ul class="nav__menu" id="navMenuList">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav__backdrop" id="navBackdrop" hidden></div>
+  </nav>
+
+  <main id="content" class="section">
+    <div id="projectHero" class="hero" style="padding-top:0;">
+      <h1 id="projTitle">Loading…</h1>
+      <p class="section__lead" id="projTagline"></p>
+      <div class="hero__cta" id="projLinks"></div>
+    </div>
+
+    <section class="section" style="padding-top:1rem;">
+      <div id="projHeroImg" style="max-width:1000px;margin:0 auto;"></div>
+
+      <h2>Overview</h2>
+      <p id="projSummary"></p>
+
+      <h2>Responsibilities</h2>
+      <ul id="projDetails" class="timeline"></ul>
+
+      <h2>Gallery</h2>
+      <div id="projGallery" class="grid"></div>
+
+      <h2>Tech Stack</h2>
+      <p class="meta" id="projStack"></p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+</body>
+</html>

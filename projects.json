@@ -1,0 +1,99 @@
+[
+    {
+      "slug": "quickwrite",
+      "title": "QuickWrite",
+      "summary": "QuickWrite is a social media app designed for creative writers that delivers a new prompt each day and gives the user 15 minutes to craft their response. Writers can post anonymously or under a username, explore how others approached the same challenge, and build community around daily creativity. The app combines timed writing exercises with social interaction to inspire consistent practice and collaboration.",
+      "responsibilities": [
+        "Contributed to frontend UI design and development using React, HTML, CSS, and JavaScript",
+        "Implemented backend features with Firebase Authentication, Realtime Database, and Cloud Functions",
+        "Actively participated in Agile Scrum ceremonies, sprint planning, and collaborative team development",
+        "Maintained developer documentation by writing the GitHub Wiki",
+        "Utilized Git/GitHub for version control, issue tracking, and project management",
+        "Performed testing through Firebase Test Lab, automated unit tests, and device emulation"
+      ],
+      "stack": [
+        "  React",
+        "  HTML",
+        "  CSS",
+        "  JavaScript",
+        "  Node.js",
+        "  Git/GitHub",
+        "  Firebase (Authentication, Realtime Database, Cloud Functions, Test Lab)",
+        "  NoSQL"
+      ],
+      "heroImage": "images/projects/quickwrite/hero.png",
+      "gallery": [
+        "images/projects/quickwrite/SS1.jpg",
+        "images/projects/quickwrite/SS2.jpg",
+        "images/projects/quickwrite/SS3.png",
+        "images/projects/quickwrite/SS4.png",
+        "images/projects/quickwrite/SS5.jpg",
+        "images/projects/quickwrite/SS6.jpg"
+      ],
+      "links": {
+        "repo": "https://github.com/WParkerHolland/CSC305",
+        "wiki": "https://github.com/WParkerHolland/CSC305/wiki",
+        "board": "https://github.com/users/WParkerHolland/projects/2",
+        "site": "https://wparkerholland.github.io/CSC305/"
+      },
+      "details": [
+        "Scrum development with sprints and a project board",
+        "End to end auth and content posting flow",
+        "Wiki documents decisions and APIs"
+      ]
+    },
+    {
+      "slug": "legacy-js-samples",
+      "title": "Legacy JavaScript Apps",
+      "tagline": "Small JS apps from early work",
+      "summary": "A curated set of earlier JavaScript projects with links and short notes.",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "heroImage": "images/projects/legacy/hero.png",
+      "gallery": [],
+      "links": {
+        "page": "https://youruser.github.io/legacy-js",
+        "repo": "https://github.com/youruser/legacy-js"
+      },
+      "details": [
+        "Simple DOM apps and widgets",
+        "Notes on what I would refactor today"
+      ]
+    },
+    {
+      "slug": "carroll-custom-tackle",
+      "title": "CarrollCustomTackle Web Store",
+      "tagline": "Storefront and content for custom lures",
+      "summary": "Built and shipped a small ecommerce site, collected payments, and tuned UX.",
+      "stack": ["HTML", "CSS", "JavaScript", "Stripe"],
+      "heroImage": "images/projects/cct/hero.png",
+      "gallery": [
+        "images/projects/cct/home.png",
+        "images/projects/cct/product.png"
+      ],
+      "links": {
+        "site": "https://carrollcustomtackle.example",
+        "repo": "https://github.com/youruser/CarrollCustomTackle"
+      },
+      "details": [
+        "Payments, product pages, and launch logistics",
+        "What worked and what I would change next"
+      ]
+    },
+    {
+      "slug": "base-starter",
+      "title": "Original Base Code",
+      "tagline": "Simple starter repo used in several apps",
+      "summary": "Lightweight boilerplate for static sites with a11y patterns, cards, and icons.",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "heroImage": "images/projects/base/hero.png",
+      "gallery": [],
+      "links": {
+        "repo": "https://github.com/youruser/base-starter"
+      },
+      "details": [
+        "Opinionated structure and utilities",
+        "Copy paste friendly components"
+      ]
+    }
+]
+  
