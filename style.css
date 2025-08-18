@@ -304,7 +304,7 @@
     justify-content: space-between;   /* push bottom to bottom */
     min-height: 300px;                /* card height */
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
     transition: background-size .35s ease;  /* zoom effect */
     text-decoration: none;
     color: inherit;
@@ -348,7 +348,7 @@
   /* Hover/focus zoom */
   .card--bg:hover .card__link,
   .card--bg:focus-within .card__link {
-    background-size: 110%;
+    background-size: 120%;
     text-decoration: none;
   }
   
