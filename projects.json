@@ -43,6 +43,35 @@
       ]
     },
     {
+        "slug": "carroll-custom-tackle",
+        "title": "Carroll Custom Tackle LLC",
+        "summary": "In July of 2025, a close friend and I co-founded Carroll Custom Tackle LLC, a company dedicated to designing and selling custom fishing lures. I originally built our website by hardcoding it from scratch with HTML, CSS, and JavaScript to establish an online presence. While the initial website was on a good track, we quickly realized that maintaining and scaling it as our business grew would demand more time than we could reasonably commit. To streamline operations, we migrated the site to Squarespace, which provided built-in e-commerce tools, responsive templates, and secure payment integrations. This allowed us to focus our energy on product development and business growth, while still maintaining a professional online storefront.",
+        "stack": ["HTML", "CSS", "JavaScript", "Stripe"],
+        "heroImage": "images/projects/cct/hero.png",
+        "responsibilities": [
+            "Manage Carroll Custom Tackle LLC with my business partner, overseeing all aspects of operations",
+            "Developed and launched the initial website using HTML, CSS, and JavaScript",
+            "Led migration to Squarespace to improve scalability and streamline e-commerce operations",
+            "Configured backend settings in Squarespace, including product catalog management, payment integrations, and order processing",
+            "Oversaw branding, marketing strategy, and customer outreach to build the company’s online presence (Instagram and YouTube)",
+            "Balanced business leadership with technical responsibilities to support company growth"
+        ],
+        "gallery": [
+          "images/projects/cct/SS1.png",
+          "images/projects/cct/SS2.png",
+          "images/projects/cct/SS3.png"
+        ],
+        "links": {
+          "repo": "https://github.com/matthewcarroll2020/CarrollCustomTackle",
+          "site": "https://www.carrollcustomtackle.com/",
+          "live": "https://matthewcarroll2020.github.io/CarrollCustomTackle/"
+        },
+        "details": [
+          "Payments, product pages, and launch logistics",
+          "What worked and what I would change next"
+        ]
+    },
+    {
       "slug": "legacy-js-samples",
       "title": "Legacy JavaScript Apps",
       "tagline": "Small JS apps from early work",
@@ -57,42 +86,6 @@
       "details": [
         "Simple DOM apps and widgets",
         "Notes on what I would refactor today"
-      ]
-    },
-    {
-      "slug": "carroll-custom-tackle",
-      "title": "CarrollCustomTackle Web Store",
-      "tagline": "Storefront and content for custom lures",
-      "summary": "Built and shipped a small ecommerce site, collected payments, and tuned UX.",
-      "stack": ["HTML", "CSS", "JavaScript", "Stripe"],
-      "heroImage": "images/projects/cct/hero.png",
-      "gallery": [
-        "images/projects/cct/home.png",
-        "images/projects/cct/product.png"
-      ],
-      "links": {
-        "site": "https://carrollcustomtackle.example",
-        "repo": "https://github.com/youruser/CarrollCustomTackle"
-      },
-      "details": [
-        "Payments, product pages, and launch logistics",
-        "What worked and what I would change next"
-      ]
-    },
-    {
-      "slug": "base-starter",
-      "title": "Original Base Code",
-      "tagline": "Simple starter repo used in several apps",
-      "summary": "Lightweight boilerplate for static sites with a11y patterns, cards, and icons.",
-      "stack": ["HTML", "CSS", "JavaScript"],
-      "heroImage": "images/projects/base/hero.png",
-      "gallery": [],
-      "links": {
-        "repo": "https://github.com/youruser/base-starter"
-      },
-      "details": [
-        "Opinionated structure and utilities",
-        "Copy paste friendly components"
       ]
     }
 ]

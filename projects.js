@@ -79,7 +79,7 @@ async function loadProjects() {
   
     // Links row
     const links = [];
-    if (p.links?.live) links.push(linkBtn('Live', p.links.live));
+    if (p.links?.live) links.push(linkBtn('Initial Website', p.links.live));
     if (p.links?.site) links.push(linkBtn('Website', p.links.site));
     if (p.links?.page) links.push(linkBtn('Page', p.links.page));
     if (p.links?.repo) links.push(linkBtn('Code', p.links.repo));
