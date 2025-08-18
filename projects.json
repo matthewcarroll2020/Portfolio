@@ -2,7 +2,7 @@
     {
       "slug": "quickwrite",
       "title": "QuickWrite",
-      "summary": "Built in a scrum team, wrote features across auth and feed, documented in GitHub wiki and project board.",
+      "summary": "QuickWrite is a social media app designed for creative writers that delivers a new prompt each day and gives the user 15 minutes to craft their response. Writers can post anonymously or under a username, explore how others approached the same challenge, and build community around daily creativity. The app combines timed writing exercises with social interaction to inspire consistent practice and collaboration.",
       "stack": ["React", "Node.js", "NoSQL", "Cloud Functions"],
       "heroImage": "images/projects/quickwrite/hero.png",
       "gallery": [
@@ -13,7 +13,7 @@
         "repo": "https://github.com/WParkerHolland/CSC305",
         "wiki": "https://github.com/WParkerHolland/CSC305/wiki",
         "board": "https://github.com/users/WParkerHolland/projects/2",
-        "live": ""
+        "site": "https://wparkerholland.github.io/CSC305/"
       },
       "details": [
         "Scrum development with sprints and a project board",

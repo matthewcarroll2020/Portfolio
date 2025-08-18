@@ -93,6 +93,8 @@
   .btn:hover { 
     filter: brightness(1.05); 
     text-decoration: none;
+    background: rgba(110, 168, 254, 0.15); /* subtle hover background */
+
   }
   .btn--ghost {
     background: transparent;
@@ -359,4 +361,3 @@
   
   /* Optional: pointer cursor for clarity */
   .card--bg { cursor: pointer; }
-  
