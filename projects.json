@@ -39,7 +39,7 @@
     {
       "slug": "triptracker",
       "title": "Fishing Trip Tracker",
-      "summary": "CCT Fishing Trip Tracker is a web application designed to help anglers plan, track, and share their fishing trips. Users can log their trips, including details like location, weather conditions, and catches. The app also features a social component, allowing users to connect with fellow anglers, share tips, and showcase their best catches.",
+      "summary": "A React web app that helps anglers log and manage their fishing adventures. Users can sign in with Google, add trips with details like date, location, and fish caught, and view or delete past trips. Built with React, Firebase (Auth + Firestore), and Tailwind CSS, this project demonstrates modern frontend development, authentication, database integration, and clean UI design. Deployed on GitHub Pages.",
       "responsibilities": [
         "Developed frontend UI design using React + Vite and Tailwind CSS",
         "Implemented backend features such as sign-in and trip storage with Firebase Authentication and Firebase Firestore Database",
