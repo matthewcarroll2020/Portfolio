@@ -37,6 +37,32 @@
       }
     },
     {
+      "slug": "triptracker",
+      "title": "Fishing Trip Tracker",
+      "summary": "CCT Fishing Trip Tracker is a web application designed to help anglers plan, track, and share their fishing trips. Users can log their trips, including details like location, weather conditions, and catches. The app also features a social component, allowing users to connect with fellow anglers, share tips, and showcase their best catches.",
+      "responsibilities": [
+        "Developed frontend UI design using React + Vite and Tailwind CSS",
+        "Implemented backend features such as sign-in and trip storage with Firebase Authentication and Firebase Firestore Database",
+        "Utilized Git/GitHub for version control, issue tracking, and project management",
+        "Utilized gh-pages for deployment"
+      ],
+      "stack": [
+        "  React + Vite",
+        "  HTML",
+        "  Tailwind CSS",
+        "  JavaScript",
+        "  Node.js",
+        "  Firebase (Authentication, Realtime Database)",
+        "  NoSQL"
+      ],
+      "heroImage": "images/projects/triptracker/hero.PNG",
+      "gallery": [],
+      "links": {
+        "repo": "https://github.com/matthewcarroll2020/fishing-trip-tracker",
+        "site": "https://matthewcarroll2020.github.io/fishing-trip-tracker/"
+      }
+    },
+    {
         "slug": "carroll-custom-tackle",
         "title": "Carroll Custom Tackle LLC",
         "summary": "In July of 2025, a close friend and I co-founded Carroll Custom Tackle LLC, a company dedicated to designing and selling custom fishing lures. I originally built our website by hardcoding it from scratch with HTML, CSS, and JavaScript to establish an online presence. While the initial website was on a good track, we quickly realized that maintaining and scaling it as our business grew would demand more time than we could reasonably commit. To streamline operations, we migrated the site to Squarespace, which provided built-in e-commerce tools, responsive templates, and secure payment integrations. This allowed us to focus our energy on product development and business growth, while still maintaining a professional online storefront.",
